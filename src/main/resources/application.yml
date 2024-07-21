@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+dgs:
+  graphql:
+    introspection:
+      enabled: true
+    schema-locations:
+      - classpath*:schema/**/*.graphql*
+    virtualthreads:
+      enabled: true
